@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import com.coti.tools.Esdia;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -9,7 +10,8 @@ public class App {
 
         while (flag == true) {
             System.out.println("Introduzca la cantidad de números que va a introducir: ");
-            repeticiones = scan.nextInt();
+            repeticiones =Esdia.readInt(scan.next());
+            System.out.println("NUMERO INTRODUCIDO: "+ repeticiones);
 
             if (repeticiones <= 0) {
                 System.err.println("ERROR: Cantidad introducida no válida: " + repeticiones + " <= 0");
@@ -19,11 +21,11 @@ public class App {
             }
         }
 
-        int media = 0;
+        float media = 0;
 
         for (int i = 0; i < repeticiones; i++) {
             System.out.println("Introduzca el número " + (i+1) +": ");
-            media += scan.nextInt();
+            media += Esdia.readFloat(scan.next());
         }
 
         media = media / repeticiones;
