@@ -3,14 +3,24 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        System.out.println("----------DATOS DE LA PERSONA 1----------");
-        Person p1 = obtenerPersona();
-        System.out.println("----------DATOS DE LA PERSONA 2----------");
-        Person p2 = obtenerPersona();
-        System.out.println("----------DATOS DE LA PERSONA 3----------");
-        Person p3 = obtenerPersona();
+        Person p1 = new Person();
+        Person p2 = new Person();
+        Person p3 = new Person();
 
-            //CÓDIO CÁLCULO MAYOR ALTURA
+        p1.setName("Victor");
+        p1.setHeight( 1.79f);
+        p1.setWeight( 72.20f);
+
+        p2.setName("David");
+        p2.setHeight( 1.83f);
+        p2.setWeight( 69.40f);
+
+        p3.setName("Fernando");
+        p3.setHeight( 1.60f);
+        p3.setWeight( 75.37f);
+
+
+            //CÓDIGO CÁLCULO DE LA ALTURA
         //P1 ES MÁS ALTO O IGUAL QUE ALGUNO DE LOS OTROS 2
         if (p1.getHeight() >= p2.getHeight() && p1.getHeight() >= p3.getHeight()) {
             //LOS 3 PESAN LO MISMO
@@ -42,9 +52,9 @@ public class App {
         else {
                 System.out.println("La persona más alta es " + p3.getName() + " con una altura de " + p3.getHeight() + "cm");
         }
- 
-
         
+
+
             //CÓDIGO CÁLCULO MAYOR PESO
         //P1 ES MÁS ALTO O IGUAL QUE ALGUNO DE LOS OTROS 2
         if (p1.getWeight() >= p2.getWeight() && p1.getWeight() >= p3.getWeight()) {
@@ -77,22 +87,5 @@ public class App {
         else {
                 System.out.println("La persona que más pesa es " + p3.getName() + " con un peso de " + p3.getWeight() + "kg");
         }   
-    }
-
-    private static Person obtenerPersona() {
-        
-        Scanner scan = new Scanner(System.in);
-        Person p = new Person();
-
-        System.out.println("Introduzca el nombre de la persona: ");
-        p.setName(scan.nextLine());
-
-        System.out.println("Introduzca la altura de la persona: ");
-        p.setHeight(scan.nextFloat());
-
-        System.out.println("Introduzca el peso de la persona: ");
-        p.setWeight(scan.nextFloat());
-
-        return p;
     }
 }
