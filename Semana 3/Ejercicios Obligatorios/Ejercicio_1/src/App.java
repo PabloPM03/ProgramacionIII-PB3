@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        System.out.println("----------DATOS DE LA PERSONA 1----------");
+        Person p1 = obtenerPersona();
+        System.out.println("----------DATOS DE LA PERSONA 2----------");
+        Person p2 = obtenerPersona();
+        System.out.println("----------DATOS DE LA PERSONA 3----------");
+        Person p3 = obtenerPersona();
+
+
+        //P1 ES MÁS ALTO O IGUAL QUE ALGUNO DE LOS OTROS 2
+        if (p1.getHeight() >= p2.getHeight() && p1.getHeight() >= p3.getHeight()) {
+            //LOS 3 PESAN LO MISMO
+            if (p1.getHeight() == p2.getHeight() && p1.getHeight() == p3.getHeight()) {
+                System.out.println("Las tres personas, " + p1.getName() + ", " +p2.getName() + " y " +p3.getName() + " tienen la misma altura (" + p1.getHeight() + "cm)");    
+            }
+            else if (p1.getHeight() == p2.getHeight()) {
+                System.out.println("Las personas más altas son " + p1.getName() + " y " +p2.getName() + " con una altura de " + p1.getHeight() + "cm");
+            }
+            else if (p1.getHeight() == p3.getHeight()) {
+                System.out.println("Las personas más altas son " + p1.getName() + " y " +p3.getName() + " con una altura de " + p1.getHeight() + "cm");
+            }
+            else {
+                System.out.println("La persona más alta es " + p1.getName() + " con una altura de " + p1.getHeight() + "cm");
+            }
+        }
+
+        //P2 ES MÁS ALTO O IGUAL QUE P3
+        else if (p2.getHeight() >= p3.getHeight()) {
+            if (p2.getHeight() == p3.getHeight()) {
+                System.out.println("Las personas más altas son " + p2.getName() + " y " +p3.getName() + " con una altura de " + p2.getHeight() + "cm");
+            }
+            else {
+                System.out.println("La persona más alta es " + p2.getName() + " con una altura de " + p2.getHeight() + "cm");
+            }
+        }
+
+        //P3 ES EL MÁS ALTO
+        else {
+                System.out.println("La persona más alta es " + p3.getName() + " con una altura de " + p3.getHeight() + "cm");
+        }
+
+
+    }
+
+    private static Person obtenerPersona() {
+        
+        Scanner scan = new Scanner(System.in);
+        Person p = new Person();
+
+        System.out.println("Introduzca el nombre de la persona: ");
+        p.setName(scan.nextLine());
+
+        System.out.println("Introduzca la altura de la persona: ");
+        p.setHeight(scan.nextFloat());
+
+        System.out.println("Introduzca el peso de la persona: ");
+        p.setWeight(scan.nextFloat());
+
+        return p;
+    }
+}
