@@ -18,7 +18,7 @@ public class App {
         }
         System.out.printf("*");
         for (int j=0; j<10; j++) {System.out.printf("*");}
-        if (nombre.length() > 8) {
+        if (apellido.length() > 8) {
             for(int i=0; i<(apellido.length() - 8); i++) {System.out.printf("*");}
         }
         System.out.printf("*");
@@ -42,7 +42,7 @@ public class App {
         }
         System.out.printf("*");
         for (int j=0; j<10; j++) {System.out.printf("*");}
-        if (nombre.length() > 8) {
+        if (apellido.length() > 8) {
             for(int i=0; i<(apellido.length() - 8); i++) {System.out.printf("*");}
         }
         System.out.printf("*");
@@ -66,7 +66,7 @@ public class App {
         }
         System.out.printf("*");
         for (int j=0; j<10; j++) {System.out.printf("*");}
-        if (nombre.length() > 8) {
+        if (apellido.length() > 8) {
             for(int i=0; i<(apellido.length() - 8); i++) {System.out.printf("*");}
         }
         System.out.printf("*");
