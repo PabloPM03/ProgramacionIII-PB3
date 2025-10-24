@@ -5,9 +5,9 @@ public class Pelicula {
     Director director = new Director();
     String titulo;
     int anioEstreno, duracion;
-    Double valoracion;
+    Float valoracion;
 
-    public void setDatosPelicula(String titulo, int anioEstreno, int duracion, Double valoracion) {
+    public Pelicula(String titulo, int anioEstreno, int duracion, Float valoracion) {
         this.titulo = titulo;
         this.anioEstreno = anioEstreno;
         this.duracion = duracion;
