@@ -135,7 +135,7 @@ public class Videoteca {
             System.out.printf("| "+peliculas[i].valoracion+"        |");
             
             sumaVisionado += peliculas[i].duracion;
-            mediaValoracion += valoracion; 
+            mediaValoracion += valoracion;  
         }
 
         mediaValoracion = mediaValoracion / numPeliculas;
