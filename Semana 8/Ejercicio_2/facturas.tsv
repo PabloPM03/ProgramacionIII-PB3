@@ -1,0 +1,11 @@
+Concepto	Descuento	Fecha	Importe	NIF	NombreCliente	Direccion	IVA
+Desarrollo Web	0.05	15/01/2024	1200.50	12345678A	Empresa A S.L.	Calle Mayor 1, Madrid	0.21
+Mantenimiento	0.00	16/01/2024	300.00	87654321B	Juan Pérez	Av. Libertad 45, Valencia	0.21
+Licencias Software	0.10	20/01/2024	5000.00	11223344C	Tech Solutions	Paseo Gracia 20, Barcelona	0.21
+Consultoría	0.15	22/01/2024	850.75	55667788D	Laura Gómez	Plaza España 3, Sevilla	0.21
+Reparación Hardware	0.00	25/01/2024	120.00	99887766E	Carlos Ruiz	Calle Pez 8, Madrid	0.21
+Formación Java	0.20	28/01/2024	2000.00	44332211F	Academia Code	Via Augusta 100, Barcelona	0.21
+Auditoría	0.05	01/02/2024	1500.00	66554433G	Consultora Beta	Calle Colon 2, Valencia	0.21
+Soporte Remoto	0.00	03/02/2024	60.50	22334455H	Pedro Martín	Av. America 12, Zaragoza	0.21
+Diseño Gráfico	0.10	05/02/2024	450.00	99001122I	Estudio Creativo	Calle Larios 5, Málaga	0.21
+Hosting Anual	0.00	10/02/2024	100.00	77889900J	StartUp X	Calle Alcala 50, Madrid	0.21
