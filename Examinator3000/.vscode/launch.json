@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "type": "java",
+            "name": "Examinador IA",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": ["-question-creator",
+                "gemini-2.5-flash",
+                "AIzaSyB_HM-zqWMt_bc_sQp8AYVRMr6NXZjvPEI"]
+        }
+    ]
+}
