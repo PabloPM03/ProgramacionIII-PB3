@@ -1,0 +1,4 @@
+ej11: ej11.o
+    gcc ej11.o -o ej11
+ej11.o: ej11.c
+    gcc -c ej11.c

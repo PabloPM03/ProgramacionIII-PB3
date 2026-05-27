@@ -1,0 +1,4 @@
+equipo: equipo.o
+	gcc equipo.o -o equipo
+equipo.o: equipo.c
+	gcc -c equipo.c

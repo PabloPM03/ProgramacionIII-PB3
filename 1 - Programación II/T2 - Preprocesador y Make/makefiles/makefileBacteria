@@ -1,0 +1,4 @@
+bacteria: bacteria.o
+	gcc bacteria.o -o bacteria
+bacteria.o: bacteria.c
+	gcc -c bacteria.c

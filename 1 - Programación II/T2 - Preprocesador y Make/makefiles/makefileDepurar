@@ -1,0 +1,4 @@
+depurar: depurar.o
+	gcc depurar.o -o depurar
+depurar.o: depurar.c
+	gcc -c depurar.c

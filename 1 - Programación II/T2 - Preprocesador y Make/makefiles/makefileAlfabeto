@@ -1,0 +1,4 @@
+alfabeto: alfabeto.o
+	gcc alfabeto.o -o alfabeto
+alfabeto.o: alfabeto.c
+	gcc -c alfabeto.c

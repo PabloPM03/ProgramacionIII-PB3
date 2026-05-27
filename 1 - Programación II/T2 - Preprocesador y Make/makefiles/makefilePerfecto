@@ -1,0 +1,4 @@
+perfecto: perfecto.o
+	gcc perfecto.o -o perfecto
+perfecto.o: perfecto.c
+	gcc -c perfecto.c
